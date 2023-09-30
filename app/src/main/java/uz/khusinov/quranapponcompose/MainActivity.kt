@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = Color.White
                 ) {
-                    FirstTextView("Shaxriyor")
+                    FirstTextView("Quran app")
                 }
             }
         }
