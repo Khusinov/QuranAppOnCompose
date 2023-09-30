@@ -46,6 +46,6 @@ fun FirstTextView(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     QuranAppOnComposeTheme {
-        FirstTextView("")
+        FirstTextView("Quran app 2")
     }
 }
