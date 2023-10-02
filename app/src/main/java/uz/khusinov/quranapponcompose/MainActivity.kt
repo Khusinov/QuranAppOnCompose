@@ -20,32 +20,23 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            QuranAppOnComposeTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = Color.White
-                ) {
-                    FirstTextView("Quran app")
-                }
-            }
+            MessageCard(Message("Shaxriyor", "Assalomu alaykum bo'lajak dasturchilar"))
         }
+
+
     }
-}
 
-@Composable
-fun FirstTextView(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Quran App",
-        color = Color.DarkGray,
-        modifier = Modifier.padding(80.dp).size(30.dp)
-    )
-}
+    data class Message(val author: String, val body: String)
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    QuranAppOnComposeTheme {
-        FirstTextView("Quran app 2")
+    @Composable
+    fun MessageCard(msg: Message) {
+        Text(text = msg.author)
+        Text(text = msg.body)
+    }
+
+    @Preview
+    @Composable
+    fun previewMessageCard() {
+        MessageCard(msg = Message())
     }
 }
