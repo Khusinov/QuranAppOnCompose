@@ -37,6 +37,6 @@ class MainActivity : ComponentActivity() {
     @Preview
     @Composable
     fun previewMessageCard() {
-        MessageCard(msg = Message())
+        MessageCard(msg = Message("Shaxriy" , "textxttxtxtxtxx"))
     }
 }
