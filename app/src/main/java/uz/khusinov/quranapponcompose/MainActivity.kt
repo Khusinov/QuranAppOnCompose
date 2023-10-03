@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MessageCard(Message("Shaxriyor", "Assalomu alaykum bo'lajak dasturchilar"))
+            MessageCard(Message("Shaxriyor", "Assalomu alaykum bo'lajak dasturchilar "))
         }
 
 
